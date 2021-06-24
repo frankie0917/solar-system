@@ -6,6 +6,8 @@ export class Store {
     makeAutoObservable(this);
   }
 
+  curBallIndex: number | null = null;
+
   addBall(ball: Ball) {
     this.balls.push(ball);
   }
